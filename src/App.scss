@@ -1,0 +1,24 @@
+.root {
+  display: "flex";
+}
+
+.container {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.paper-mixed {
+  .paper {
+    padding: 2vw;
+    text-align: center;
+    color: #000000;
+    white-space: nowrap;
+    background: #a0db9e;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .fixed-height {
+    height: 240;
+  }
+}
