@@ -1,31 +1,45 @@
 import * as React from "react";
-import { Grid } from "@material-ui/core";
 import { Avatar } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
+import { Grid, Button, Icon } from "@material-ui/core";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 
 import "../stylesheets/UserInfo.scss";
 
 const UserInfo = (props: any) => {
+  const user = props;
+
+  // console.log(user.user);
+
   return (
     <div className="user-info">
       <Grid container spacing={3}>
         <Grid item xs={12} md={2} lg={2}>
           <Avatar
             className="profile-image"
-            alt={props.person.name}
+            alt={user.firstName}
             src="/static/images/avatar/1.jpg"
           />
         </Grid>
-        <Grid item xs={12} md={10} lg={10}>
+        <Grid item xs={12} md={6} lg={6}>
           <Typography className="name" variant="h5" gutterBottom>
-            {`${props.person.firstName} ${props.person.lastName}`}
+            {`${user.user.firstName} ${user.user.lastName}`}
           </Typography>
           <Typography className="sub-info" variant="h6" gutterBottom>
-            {props.person.location}
+            {user.user.location}
           </Typography>
           <Typography className="sub-info" variant="subtitle1" gutterBottom>
-            {`${props.person.about}`}
+            {user.user.about}
           </Typography>
+        </Grid>
+        <Grid item xs={12} md={4} lg={4}>
+          {props.connect ? (
+            <Button size="small" className="connected">
+              Connected
+            </Button>
+          ) : (
+            ""
+          )}
         </Grid>
       </Grid>
     </div>
