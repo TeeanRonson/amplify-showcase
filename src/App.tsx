@@ -1,14 +1,14 @@
 import * as React from "react";
-import PrimarySearchAppBar from "./components/PrimaryAppBar";
+import PrimarySearchAppBar from "./components/dashboard/PrimaryAppBar";
 import { Grid, Container, Paper, Box } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
-import Copyright from "./components/Copyright";
+import Copyright from "./components/dashboard/Copyright";
 import "./App.scss";
-import AllUsersControl from "./components/AllUsersControl";
-import DisplayUser from "./components/DisplayUser";
+import AllUsersControl from "./components/dashboard/AllUsersControl";
+import DisplayUser from "./components/dashboard/DisplayUser";
 import { UserBasicInfo, UserActivity } from "./components/Models/User";
-import Connections from "./components/Connections";
-import RecentActivity from "./components/RecentActivity";
+import Connections from "./components/dashboard/Connections";
+import RecentActivity from "./components/dashboard/RecentActivity";
 
 interface Props {
   //   featuredProjects: ProjectCard[];

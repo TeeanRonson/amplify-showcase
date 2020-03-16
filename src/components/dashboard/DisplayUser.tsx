@@ -3,7 +3,7 @@ import UserInfo from "./UserInfo";
 import { Grid, Button, Icon } from "@material-ui/core";
 import { Avatar } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import { UserBasicInfo } from "../components/Models/User";
+import { UserBasicInfo } from "../Models/User";
 import "../stylesheets/UserInfo.scss";
 import UserPlatformInfo from "./UserPlatformInfo";
 import { IconButton } from "@material-ui/core";
