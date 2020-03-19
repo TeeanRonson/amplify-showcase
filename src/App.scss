@@ -5,20 +5,42 @@
 .container {
   padding-top: 4px;
   padding-bottom: 4px;
+  margin-top: 20px;
 }
 
-.paper-mixed {
-  .paper {
-    padding: 2vw;
-    text-align: center;
-    color: #000000;
-    white-space: nowrap;
-    background: #a0db9e;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
+.coffeebreak {
+  width: 100%;
+  height: auto;
+}
 
-  .fixed-height {
-    height: 240;
-  }
+.container .btn {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: none;
+  color: white;
+  font-size: 18px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: medium;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: 1px;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.spacing {
+  margin-right: 10px;
 }

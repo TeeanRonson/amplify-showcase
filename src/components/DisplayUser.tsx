@@ -43,7 +43,7 @@ class DisplayUser extends React.Component<Props, State> {
             <Grid item xs={12} md={6} lg={6}>
               <UserInfo key={user.user.sub} user={user.user} />
             </Grid>
-            <Grid item alignItems="center" xs={12} md={6} lg={6}>
+            <Grid item xs={12} md={6} lg={6}>
               <Button
                 variant="contained"
                 color="primary"

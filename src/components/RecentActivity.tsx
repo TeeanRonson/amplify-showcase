@@ -7,6 +7,7 @@ import VisibilityIcon from "@material-ui/icons/Visibility";
 import { Grid, Button, Icon } from "@material-ui/core";
 import "../stylesheets/RecentActivity.scss";
 import { GridList, GridListTile } from "@material-ui/core";
+import ActivityItem from "./ActivityItem";
 
 interface Props {
   activities: UserActivity[];
@@ -32,10 +33,10 @@ class RecentActivity extends React.Component<Props, State> {
           <Typography className="section-header name" variant="h5" gutterBottom>
             Recent Activity
           </Typography>
-          <GridList cellHeight={100} className="grid-list" cols={1}>
+          <GridList cellHeight={50} className="grid-list" cols={1}>
             {activity.map(item => (
-              <GridListTile cols={1}>
-                <div>{item.activity}</div>
+              <GridListTile key={item.id} cols={1}>
+                <ActivityItem></ActivityItem>
               </GridListTile>
             ))}
           </GridList>

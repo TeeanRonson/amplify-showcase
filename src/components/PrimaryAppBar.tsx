@@ -13,12 +13,11 @@ import InputBase from "@material-ui/core/InputBase";
 import Badge from "@material-ui/core/Badge";
 import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import FreeBreakfastIcon from "@material-ui/icons/FreeBreakfast";
-import SearchIcon from "@material-ui/icons/Search";
 import AccountCircle from "@material-ui/icons/AccountCircle";
 import MailIcon from "@material-ui/icons/Mail";
 import NotificationsIcon from "@material-ui/icons/Notifications";
 import MoreIcon from "@material-ui/icons/MoreVert";
+import Backdrop from "./Backdrop";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -84,7 +83,11 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function PrimarySearchAppBar() {
+interface CustomInputProps {
+  toggleBackdrop: () => void;
+}
+
+const PrimarySearchAppBar = (props: CustomInputProps) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const [
@@ -179,7 +182,7 @@ export default function PrimarySearchAppBar() {
             color="inherit"
             aria-label="open drawer"
           >
-            <FreeBreakfastIcon />
+            <Backdrop toggleBackdrop={props.toggleBackdrop}></Backdrop>
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
             Showcase
@@ -224,4 +227,6 @@ export default function PrimarySearchAppBar() {
       {renderMenu}
     </div>
   );
-}
+};
+
+export default PrimarySearchAppBar;

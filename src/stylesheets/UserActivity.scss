@@ -1,0 +1,44 @@
+.user-info {
+  margin-top: 20px;
+
+  .activity-user-image {
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+  }
+
+  .activity {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: #484848;
+  }
+
+  .sub-info {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+    color: #484848;
+  }
+
+  .section-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .remove {
+    font-family: Proxima Nova;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+    /* identical to box height */
+
+    color: #e13f75;
+  }
+}
