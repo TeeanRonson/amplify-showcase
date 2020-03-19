@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Mockup from '../images/mockup.png';
 import Logo from '../images/logo.svg';
-import '../stylesheets/style.scss';
 const Landing = () => {
     return (
         <div className="l-main landing-background">
@@ -23,11 +22,8 @@ const Landing = () => {
                                 </div>
                                 <div className="col-6">
                                     <div className="l-actions">
-                                        <Link className="btn btn-p4 margin-right-xxs" to="/signin">
-                                            Signin
-                                        </Link>
-                                        <Link className="btn btn-p0" to="/signup">
-                                            Sign up
+                                        <Link className="btn btn-p4 margin-right-xxs" to="/login">
+                                            login
                                         </Link>
                                     </div>
                                 </div>
@@ -37,15 +33,7 @@ const Landing = () => {
                     <div className="l-hero margin-top--xs">
                         <div className="container">
                             <div className="l-hero-txt ">
-                                Showcasing the World’s Tech Community.
-                            </div>
-                            <div className="l-hero-sub  margin-top--xxs">
-                                Elevate your career today
-                            </div>
-                            <div className="l-hero-action margin-top--md">
-                                <Link className="btn btn-p0 " to="/signup">
-                                    Create your profile
-                                </Link>
+                                Showcasing Admin.
                             </div>
                         </div>
                     </div>

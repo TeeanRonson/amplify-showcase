@@ -1,12 +1,13 @@
 import React from "react";
 import {Auth} from "aws-amplify";
 import {Redirect, Route, withRouter} from "react-router";
+import NewAppBar from "../components/new-app-bar";
 
 const guestOnlyRoute = [
     '/login'
 ];
 
-const publicRoute = ['/'];
+// const publicRoute = ['/'];
 
 class PublicRoute extends React.Component {
     state = {
@@ -59,7 +60,7 @@ class PublicRoute extends React.Component {
                             </div>
                         );
                     } else {
-                        return <Redirect to={{ pathname: '/home' }} />;
+                        return <Redirect to={{ pathname: '/dashboard' }} />;
                     }
                 }}
             />

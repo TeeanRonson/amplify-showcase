@@ -3,7 +3,7 @@ import PrimarySearchAppBar from "./PrimaryAppBar";
 import { Grid, Container, Paper, Box } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Copyright from "./Copyright";
-import "./App.scss";
+import "../../App.scss";
 import AllUsersControl from "./AllUsersControl";
 import DisplayUser from "./DisplayUser";
 import { UserBasicInfo, UserActivity } from "../Models/User";

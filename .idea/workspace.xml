@@ -2,34 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a886d62-930c-412d-a3db-d1ec9ace9612" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/api/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Models/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/landing/Landing.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/landing/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/InputEmail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/InputPassword.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/InputText.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/LoginPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/PrivateRoute.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/PublicRoute.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/Router.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app-bar/AppBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/app-bar/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/new-app-bar/NewAppBar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/new-app-bar/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/stylesheets/PrimaryAppBar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/stylesheets/UserList.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.dev.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AllUsersControl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/AllUsersControl.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Connections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Connections.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Copyright.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DisplayUser.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/DisplayUser.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/InfoComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/InfoComponent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PrimaryAppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/PrimaryAppBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RecentActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/RecentActivity.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/UserInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UserPlatformInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/UserPlatformInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/AllUsersControl.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/AllUsersControl.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Connections.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Connections.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Dashboard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Dashboard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/RecentActivity.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/RecentActivity.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/landing/Landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/landing/Landing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/LoginPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/PrivateRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/PrivateRoute.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/PublicRoute.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/PublicRoute.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/Router.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/Router.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/AllUsersControl.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stylesheets/AllUsersControl.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/Connections.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stylesheets/Connections.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/DisplayUser.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stylesheets/DisplayUser.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/PrimaryAppBar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileIcon/ProfileIcon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/RecentActivity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stylesheets/RecentActivity.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/Search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stylesheets/Search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/UserInfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/stylesheets/UserInfo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/UserList.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProfileIcon/index.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -52,15 +53,21 @@
   <component name="ProjectId" id="1Z8gB05TPO2Y3hzwFTcHnpDnDKK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/routers" />
       <recent name="$PROJECT_DIR$/src/components/dashboard" />
       <recent name="$PROJECT_DIR$/src/components/login" />
@@ -89,7 +96,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584225995463</updated>
-      <workItem from="1584225996901" duration="13807000" />
+      <workItem from="1584225996901" duration="14483000" />
+      <workItem from="1584588407540" duration="7711000" />
     </task>
     <servers />
   </component>
@@ -101,7 +109,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

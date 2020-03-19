@@ -1,6 +1,15 @@
 import React from "react";
 import {Auth} from "aws-amplify";
 import {Redirect, Route, withRouter} from "react-router";
+// import loadable from '@loadable/component';
+const AppBar = import('../components/app-bar');
+
+const guestOnlyRoute = [
+    '/login',
+    '/dashboard'
+];
+
+const disableMenuRoute = ['/'];
 
 class PrivateRoute extends React.Component {
     state = {
@@ -63,6 +72,7 @@ class PrivateRoute extends React.Component {
         if (!loaded) return null;
         return (
             <Route
+                // eslint-disable-next-line no-restricted-globals
                 history={history}
                 {...rest}
                 render={props => {
@@ -100,7 +110,7 @@ class PrivateRoute extends React.Component {
                     ) : (
                         <Redirect
                             to={{
-                                pathname: '/signup'
+                                pathname: '/login'
                             }}
                         />
                     );

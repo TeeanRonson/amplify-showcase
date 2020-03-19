@@ -1,6 +1,6 @@
 import * as React from "react";
 import UserInfo from "./UserInfo";
-import { UserBasicInfo, UserActivity } from "./Models/User";
+import { UserBasicInfo, UserActivity } from "../Models/User";
 import Typography from "@material-ui/core/Typography";
 import "../stylesheets/UserInfo.scss";
 import VisibilityIcon from "@material-ui/icons/Visibility";

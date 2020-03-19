@@ -1,6 +1,6 @@
 import * as React from "react";
 import Search from "./Search";
-import { UserBasicInfo } from "../components/Models/User";
+import { UserBasicInfo } from "../Models/User";
 import "../stylesheets/AllUsersControl.scss";
 import { GridList, GridListTile } from "@material-ui/core";
 import UserInfo from "./UserInfo";

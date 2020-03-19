@@ -31,6 +31,7 @@ class Login extends React.Component<Props,State> {
 
     componentDidMount() {
         // if user is logged in! go to the first page
+        console.log("here");
         Auth.currentAuthenticatedUser()
             .then(()=>{
 
@@ -71,6 +72,7 @@ class Login extends React.Component<Props,State> {
         const { message } = this.state
         return (
             <div>
+                "hahah"
                 <Title>
                     Login
                 </Title>
