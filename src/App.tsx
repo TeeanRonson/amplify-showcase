@@ -20,9 +20,10 @@ interface Props {
 
 interface State {
   coffeebreak: boolean;
+  selectedUser: UserBasicInfo;
 }
 
-const samples: UserBasicInfo[] = [
+const sampleUsers: UserBasicInfo[] = [
   {
     sub: "0",
     profileIcon:
@@ -30,7 +31,9 @@ const samples: UserBasicInfo[] = [
     firstName: "Yen",
     lastName: "Liew",
     location: "San Francisco, USA",
-    about: "I am a man that goes to Mars"
+    about: "I am a man that goes to Mars",
+    connections: 12,
+    totalActivity: 25
   },
   {
     sub: "1",
@@ -39,7 +42,9 @@ const samples: UserBasicInfo[] = [
     firstName: "Perry",
     lastName: "Song",
     location: "Shenzhen, China",
-    about: "Piano player @ USF"
+    about: "Piano player @ USF",
+    connections: 13,
+    totalActivity: 26
   },
   {
     sub: "2",
@@ -48,7 +53,9 @@ const samples: UserBasicInfo[] = [
     firstName: "ShenYi",
     lastName: "Lu",
     location: "New York, USA",
-    about: "True Gamer."
+    about: "True Gamer.",
+    connections: 14,
+    totalActivity: 27
   },
   {
     sub: "3",
@@ -57,7 +64,9 @@ const samples: UserBasicInfo[] = [
     firstName: "Hiep",
     lastName: "Bui",
     location: "Seattle, USA",
-    about: "AWS"
+    about: "AWS",
+    connections: 15,
+    totalActivity: 28
   },
   {
     sub: "4",
@@ -66,7 +75,9 @@ const samples: UserBasicInfo[] = [
     firstName: "Alper",
     lastName: "Ozdamar",
     location: "San Jose, CA",
-    about: "Facebook"
+    about: "Facebook",
+    connections: 17,
+    totalActivity: 29
   },
   {
     sub: "5",
@@ -75,7 +86,9 @@ const samples: UserBasicInfo[] = [
     firstName: "Anurag",
     lastName: "Jain",
     location: "Delhi, India",
-    about: "Coinbase"
+    about: "Coinbase",
+    connections: 18,
+    totalActivity: 30
   },
   {
     sub: "6",
@@ -84,7 +97,9 @@ const samples: UserBasicInfo[] = [
     firstName: "Mario",
     lastName: "Lim",
     location: "San Francisco, USA",
-    about: "CISCO"
+    about: "CISCO",
+    connections: 19,
+    totalActivity: 25
   }
 ];
 
@@ -189,7 +204,8 @@ class App extends React.Component<Props, State> {
     super(props);
 
     this.state = {
-      coffeebreak: false
+      coffeebreak: false,
+      selectedUser: sampleUsers[0]
     };
   }
 
@@ -205,15 +221,28 @@ class App extends React.Component<Props, State> {
     return value;
   };
 
-  componentDidUpdate() {}
+  handleViewUserClick = (newSelectedUser: UserBasicInfo) => {
+    console.log(newSelectedUser);
 
-  handleViewUserClick = (event: any) => {
-    console.log("event", event);
-    console.log("its working!");
+    this.setState({ selectedUser: newSelectedUser });
   };
+
+  /**
+   * Called each time we update the page
+   * @param {*} prevProps
+   * @param {*} prevState
+   * @param {*} snapShot
+   */
+  componentDidUpdate(prevProps: any, prevState: any, snapShot: any) {
+    console.log("App - Update");
+    console.log(this.state.selectedUser);
+  }
 
   render() {
     let value = this.randomNumber();
+
+    const selectedUser = this.state.selectedUser;
+    console.log("return", selectedUser);
 
     return (
       <div>
@@ -228,14 +257,16 @@ class App extends React.Component<Props, State> {
                 <Grid container className="left-pane" spacing={3}>
                   <Grid item xs={12} md={4} lg={4}>
                     <AllUsersControl
-                      users={samples}
+                      users={sampleUsers}
                       handleViewUserClick={this.handleViewUserClick}
                     ></AllUsersControl>
                   </Grid>
                   <Grid item xs={12} md={8} lg={8}>
                     <Grid container spacing={0}>
                       <Grid item xs={12} md={12} lg={12}>
-                        <DisplayUser user={samples[0]}></DisplayUser>
+                        <DisplayUser
+                          user={this.state.selectedUser}
+                        ></DisplayUser>
                       </Grid>
                       <Grid container spacing={1}>
                         <Grid item xs={12} md={6} lg={6}>

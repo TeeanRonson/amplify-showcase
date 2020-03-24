@@ -9,7 +9,9 @@ import "../stylesheets/UserInfo.scss";
 const UserInfo = (props: any) => {
   const user = props;
 
-  console.log(props);
+  // console.log(props);
+
+  const flag = true;
 
   return (
     <div className="user-info">
@@ -43,7 +45,7 @@ const UserInfo = (props: any) => {
               size="small"
               className="view"
             >
-              View
+              {!props.isCurrent ? "View" : ""}
             </Button>
           )}
         </Grid>

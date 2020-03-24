@@ -185,7 +185,7 @@ const PrimarySearchAppBar = (props: CustomInputProps) => {
             <Backdrop toggleBackdrop={props.toggleBackdrop}></Backdrop>
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Showcase
+            SHOWCASE
           </Typography>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>

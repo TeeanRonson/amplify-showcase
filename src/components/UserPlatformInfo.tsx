@@ -6,14 +6,22 @@ import InfoComponent from "./InfoComponent";
 import "../stylesheets/UserInfo.scss";
 
 const UserPlatformInfo = (props: any) => {
+  // console.log(props.user);
+
   return (
     <div className="user-platform-info">
       <Grid container spacing={3}>
         <Grid item xs={3} md={3} lg={3}>
-          <InfoComponent item="Connections" value="15"></InfoComponent>
+          <InfoComponent
+            item="Connections"
+            value={props.user.connections}
+          ></InfoComponent>
         </Grid>
         <Grid item xs={3} md={3} lg={3}>
-          <InfoComponent item="Total Activity" value="28"></InfoComponent>
+          <InfoComponent
+            item="Total Activity"
+            value={props.user.totalActivity}
+          ></InfoComponent>
         </Grid>
       </Grid>
     </div>

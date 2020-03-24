@@ -6,6 +6,8 @@ export interface UserBasicInfo {
   headline?: string;
   location?: string;
   about?: string;
+  connections?: number;
+  totalActivity?: number;
 }
 
 export interface UserActivity {

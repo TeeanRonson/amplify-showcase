@@ -15,23 +15,19 @@ interface Props {
   user: UserBasicInfo;
 }
 
-interface State {
-  user: UserBasicInfo;
-}
+interface State {}
 
 class DisplayUser extends React.Component<Props, State> {
   constructor(props: any) {
     super(props);
 
-    this.state = {
-      user: props.user
-    };
+    this.state = {};
   }
 
   componentDidMount(): void {}
 
   render() {
-    const user = this.state;
+    const user = this.props.user;
 
     return (
       <div className="top-section">
@@ -41,7 +37,7 @@ class DisplayUser extends React.Component<Props, State> {
           </Typography>
           <Grid container spacing={3}>
             <Grid item xs={12} md={6} lg={6}>
-              <UserInfo key={user.user.sub} user={user.user} />
+              <UserInfo key={user.sub} user={user} isCurrent={true} />
             </Grid>
             <Grid item xs={12} md={6} lg={6}>
               <Button
@@ -55,7 +51,7 @@ class DisplayUser extends React.Component<Props, State> {
               </Button>
             </Grid>
           </Grid>
-          <UserPlatformInfo></UserPlatformInfo>
+          <UserPlatformInfo user={user}></UserPlatformInfo>
           <br />
           <br />
         </div>
