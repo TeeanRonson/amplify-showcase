@@ -9,6 +9,10 @@ import "../stylesheets/UserActivity.scss";
 const ActivityItem = (props: any) => {
   const activity = props;
 
+  // console.log(props);
+
+  // console.log(activity);
+
   return (
     <div className="user-activity">
       <Grid container spacing={1}>
@@ -16,7 +20,7 @@ const ActivityItem = (props: any) => {
           <Avatar
             className="activity-user-image"
             alt=""
-            src="/static/images/avatar/1.jpg"
+            src={activity.item.profileIcon}
           />
         </Grid>
         <Grid item xs={12} md={7} lg={7}>
@@ -26,11 +30,15 @@ const ActivityItem = (props: any) => {
             variant="h5"
             gutterBottom
           >
-            Just replied to your comment
+            {`${activity.item.activity}`}
           </Typography>
         </Grid>
         <Grid item xs={12} md={3} lg={3}>
-          <Button size="small" className="remove">
+          <Button
+            onClick={e => props.removeItem(activity.item)}
+            size="small"
+            className="remove"
+          >
             Remove
           </Button>
         </Grid>

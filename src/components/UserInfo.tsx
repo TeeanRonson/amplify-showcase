@@ -9,7 +9,7 @@ import "../stylesheets/UserInfo.scss";
 const UserInfo = (props: any) => {
   const user = props;
 
-  // console.log(user.user);
+  console.log(props);
 
   return (
     <div className="user-info">
@@ -18,7 +18,7 @@ const UserInfo = (props: any) => {
           <Avatar
             className="profile-image"
             alt={user.firstName}
-            src="/static/images/avatar/1.jpg"
+            src={user.user.profileIcon}
           />
         </Grid>
         <Grid item xs={12} md={6} lg={6}>
@@ -38,7 +38,13 @@ const UserInfo = (props: any) => {
               Connected
             </Button>
           ) : (
-            ""
+            <Button
+              onClick={e => props.handleViewUserClick(user.user)}
+              size="small"
+              className="view"
+            >
+              View
+            </Button>
           )}
         </Grid>
       </Grid>

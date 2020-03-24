@@ -24,56 +24,63 @@ interface State {
 
 const samples: UserBasicInfo[] = [
   {
-    sub: "1232",
-    profileIcon: "image.png",
-    firstName: "Rong",
+    sub: "0",
+    profileIcon:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    firstName: "Yen",
     lastName: "Liew",
     location: "San Francisco, USA",
     about: "I am a man that goes to Mars"
   },
   {
-    sub: "123123",
-    profileIcon: "image.png",
+    sub: "1",
+    profileIcon:
+      "https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1630&q=80",
     firstName: "Perry",
     lastName: "Song",
     location: "Shenzhen, China",
     about: "Piano player @ USF"
   },
   {
-    sub: "12312312",
-    profileIcon: "asd.png",
+    sub: "2",
+    profileIcon:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
     firstName: "ShenYi",
     lastName: "Lu",
     location: "New York, USA",
     about: "True Gamer."
   },
   {
-    sub: "1232",
-    profileIcon: "image.png",
+    sub: "3",
+    profileIcon:
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
     firstName: "Hiep",
     lastName: "Bui",
     location: "Seattle, USA",
     about: "AWS"
   },
   {
-    sub: "123123",
-    profileIcon: "image.png",
+    sub: "4",
+    profileIcon:
+      "https://images.unsplash.com/photo-1496840220025-4cbde0b9df65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
     firstName: "Alper",
     lastName: "Ozdamar",
     location: "San Jose, CA",
     about: "Facebook"
   },
   {
-    sub: "12312312",
-    profileIcon: "asd.png",
+    sub: "5",
+    profileIcon:
+      "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
     firstName: "Anurag",
     lastName: "Jain",
     location: "Delhi, India",
     about: "Coinbase"
   },
   {
-    sub: "12312312",
-    profileIcon: "asd.png",
+    sub: "6",
+    profileIcon:
+      "https://images.unsplash.com/photo-1492546662075-aabebf46dee2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
     firstName: "Mario",
     lastName: "Lim",
     location: "San Francisco, USA",
@@ -84,7 +91,8 @@ const samples: UserBasicInfo[] = [
 const connections: UserBasicInfo[] = [
   {
     sub: "1232",
-    profileIcon: "image.png",
+    profileIcon:
+      "https://images.unsplash.com/photo-1463453091185-61582044d556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
     firstName: "Hiep",
     lastName: "Bui",
     location: "Seattle, USA",
@@ -92,7 +100,8 @@ const connections: UserBasicInfo[] = [
   },
   {
     sub: "123123",
-    profileIcon: "image.png",
+    profileIcon:
+      "https://images.unsplash.com/photo-1496840220025-4cbde0b9df65?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
     firstName: "Alper",
     lastName: "Ozdamar",
     location: "San Jose, CA",
@@ -100,7 +109,8 @@ const connections: UserBasicInfo[] = [
   },
   {
     sub: "12312312",
-    profileIcon: "asd.png",
+    profileIcon:
+      "https://images.unsplash.com/photo-1530268729831-4b0b9e170218?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
     firstName: "Anurag",
     lastName: "Jain",
     location: "Delhi, India",
@@ -108,7 +118,8 @@ const connections: UserBasicInfo[] = [
   },
   {
     sub: "12312312",
-    profileIcon: "asd.png",
+    profileIcon:
+      "https://images.unsplash.com/photo-1492546662075-aabebf46dee2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80",
     firstName: "Mario",
     lastName: "Lim",
     location: "San Francisco, USA",
@@ -118,15 +129,45 @@ const connections: UserBasicInfo[] = [
 
 const activity: UserActivity[] = [
   {
-    id: "12312",
-    profileIcon: "Image.png",
-    activity: "Liked Project 1",
+    id: 20,
+    profileIcon:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    activity: '@Yen just commented on your post. "haha great job!"',
     date: new Date()
   },
   {
-    id: "12322",
-    profileIcon: "Image.png",
+    id: 0,
+    profileIcon:
+      "https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1630&q=80",
     activity: "Replied to Pengfei Song on Project 2",
+    date: new Date()
+  },
+  {
+    id: 1,
+    profileIcon:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    activity: 'Alper really likes this piece of work"',
+    date: new Date()
+  },
+  {
+    id: 2,
+    profileIcon:
+      "https://images.unsplash.com/photo-1506919258185-6078bba55d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1630&q=80",
+    activity: "Mario says good work to all SDLC class members!",
+    date: new Date()
+  },
+  {
+    id: 3,
+    profileIcon:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80",
+    activity: 'Alper really likes this piece of work"',
+    date: new Date()
+  },
+  {
+    id: 4,
+    profileIcon:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80",
+    activity: "Mario says good work to all SDLC class members!",
     date: new Date()
   }
 ];
@@ -166,6 +207,11 @@ class App extends React.Component<Props, State> {
 
   componentDidUpdate() {}
 
+  handleViewUserClick = (event: any) => {
+    console.log("event", event);
+    console.log("its working!");
+  };
+
   render() {
     let value = this.randomNumber();
 
@@ -181,7 +227,10 @@ class App extends React.Component<Props, State> {
               <Container maxWidth="lg" className="container">
                 <Grid container className="left-pane" spacing={3}>
                   <Grid item xs={12} md={4} lg={4}>
-                    <AllUsersControl users={samples}></AllUsersControl>
+                    <AllUsersControl
+                      users={samples}
+                      handleViewUserClick={this.handleViewUserClick}
+                    ></AllUsersControl>
                   </Grid>
                   <Grid item xs={12} md={8} lg={8}>
                     <Grid container spacing={0}>

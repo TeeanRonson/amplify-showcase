@@ -9,7 +9,7 @@ export interface UserBasicInfo {
 }
 
 export interface UserActivity {
-  id?: string;
+  id?: number;
   profileIcon?: string;
   activity?: string;
   date?: Date;

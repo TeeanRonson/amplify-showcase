@@ -13,20 +13,30 @@ interface Props {
   activities: UserActivity[];
 }
 
-interface State {}
+interface State {
+  activities: UserActivity[];
+}
 
 class RecentActivity extends React.Component<Props, State> {
   constructor(props: any) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      activities: this.props.activities
+    };
   }
 
   componentDidMount(): void {}
 
-  render() {
-    const activity = this.props.activities;
+  removeItem = (event: any) => {
+    const list = this.state.activities;
 
+    const trimList = list.filter(newList => newList.id !== event.id);
+
+    this.setState({ activities: trimList });
+  };
+
+  render() {
     return (
       <div className="main-left">
         <div className="user-info">
@@ -34,9 +44,12 @@ class RecentActivity extends React.Component<Props, State> {
             Recent Activity
           </Typography>
           <GridList cellHeight={50} className="grid-list" cols={1}>
-            {activity.map(item => (
+            {this.state.activities.map(item => (
               <GridListTile key={item.id} cols={1}>
-                <ActivityItem></ActivityItem>
+                <ActivityItem
+                  item={item}
+                  removeItem={this.removeItem}
+                ></ActivityItem>
               </GridListTile>
             ))}
           </GridList>
